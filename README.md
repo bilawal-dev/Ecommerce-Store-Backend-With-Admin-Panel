@@ -23,7 +23,7 @@ This document provides a detailed description of all the API endpoints available
    - **For signin**: POST Req, `/api/auth/sign-in` | requires `email` (string), `password` (string) | returns a JWT token for auth | rate limit of 3 requests per 15 minutes for security
 
 2. **Admin Panel Routes**:
-   - Protected routes, require JWT token from signin, sent as headers like `Bearer ${token}`, and only accessible by admin with role 'ADMIN'.
+   - Protected routes, require JWT token from signin, sent as headers like `Authentication: 'Bearer ${token}'`, and only accessible by admin with role 'ADMIN'.
    - **For creating a category**: POST Req, `/api/admin/category` | requires `name` (string)
    - **For deleting a category**: DELETE Req, `/api/admin/category/:name` | requires `name` of category to delete as params, also deletes all products in the category
    - **For creating a product**: POST Req, `/api/admin/product` | requires `name` (string), `description` (string), `price` (Int), `category` (string) | only send existing categories as product category
