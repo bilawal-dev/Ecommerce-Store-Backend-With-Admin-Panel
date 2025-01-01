@@ -1,6 +1,6 @@
 # Ecommerce Store Backend API Documentation 🛒📦
 
-## Comprehensive API Documentation for My Ecommerce Store Backend 📑🔍
+## Comprehensive API Documentation for My Ecommerce Store Backend 📑
 
 This document provides a detailed description of all the API endpoints available in the Ecommerce Store Backend, including user authentication, admin panel, product and category management, and error handling.
 
